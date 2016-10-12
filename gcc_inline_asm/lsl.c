@@ -1,7 +1,7 @@
 /*
  * =====================================================================================
  *
- *       Filename:  mov.c
+ *       Filename:  lsl.c
  *
  *    Description:  
  *
@@ -32,13 +32,13 @@ __asm__ volatile( "lsl	%[param1], %[param2], %[param3]	\n\t"
 
 int main(void)
 {
-	int mov;
+	int lsl;
 	printf("\n+-------------------+\n");
-	printf("|ARM Instruction MOV|\n");
+	printf("|ARM Instruction LSL|\n");
 	printf("\n+-------------------+\n");
 
-	mov = asm_lsl_ex(2, 3);
-	printf("mov = %d\n\n", mov);
+	lsl = asm_lsl_ex(3, 4);
+	printf("lsl= %d\n\n", lsl);
 
 	return 0;
 }
